@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thzed.com</title>
+    <link rel="icon" href="AcademicNexus_logo.png">
+    <!-- Add Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Using Material Symbols for better social media icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: aliceblue;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(119, 207, 234);  
+            padding: 10px;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        /* Container for left section */
+        .left-info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-info .material-icons {
+            font-size: 15px;
+            margin-right: 1px;
+        }
+
+        .logo {
+            margin-top: 10px;
+        }
+
+        .logo img {
+            height: 60px; /* Adjust logo size */
+            margin-top: 10px;
+        }
+
+        .right-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-info a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .right-info a:hover {
+            color: #0073b1; /* LinkedIn blue for hover effect */
+        }
+/* Existing styles */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-image: url('publication_image.jpg');
+    align-items: center;
+    margin-left: 30%;
+    gap: 0px; /* Spacing between the links */
+    border-radius: 10px;
+    margin-top: 0px;
+    padding: 10px;
+
+    z-index:10;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+
+.nav-bar a:hover {
+    background-color: black; /* Black hover effect */
+    border-radius: 5px;
+}
+
+.nav-bar a.active {
+    background-color: rgb(15, 18, 13);
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* White dropdown background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: black; /* Black hover effect for dropdown links */
+    color: white; /* White text on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black; /* Black hover effect for 'What We Do' */
+    color: white; /* White text on hover */
+}
+
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Top bar with logo, contact information, and navigation bar -->
+    <div class="top-bar">
+        <div class="left-info-container">
+            <div class="contact-info">
+                <span class="material-icons">phone</span> +91 9245298642
+                <a href="mailto:Academic@nexus.com" class="email-link">
+                    <span class="material-icons">email</span> Academic@nexus.com
+                </a>
+            </div>
+            <!-- Logo below contact info -->
+            <div class="logo">
+                <img src="logoMain.png" alt="Logo">
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="publication.html" class="dropbtn">Publication</a>
+                <div class="dropdown-content">
+                    <a href="journ_paper_publ.html">Journal Paper Publication </a>
+                    <a href="SCI_journ_publ.html">SCI Journal Publication </a>
+                    <a href="scopus_page.html">Scopus Paper Publication </a>
+                    <a href="annexure_publ.html">Annexure  Publication </a>
+                    <a href="ugc_care.html">UGC Care List </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="publication.html" class="active" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="Carrying.html">Carrying out a Literature Review </a>
+                    <a href="preparing.html">Preparing a Research Proposal </a>
+                    <a href="research_pw.html">Research paper writing </a>
+                    <a href="journal_PP.html">Journal paper publication </a>
+                    <a href="Thesis_w.html">Thesis writing </a>
+                    <a href="PhD_VIVA.html">PhD VIVA Process  </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="phd_assistance.html" class="dropbtn">PhD Assistance</a>
+                <div class="dropdown-content">
+                    <center><h4 style="color: black;">Writing</h4>
+                    </center>
+                <a href="#">Research Paper Writing</a>
+                <a href="#">Review Paper Writing</a>
+                <a href="#">Literature Review Writing</a>
+                <a href="#">Thesis Writing Service</a>
+                <a href="#">Synopsis Writing Services</a>
+                <a href="#">PhD Research Methodology</a>
+                <a href="#">Research Proposal Writing</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                
+            </div>
+    
+            <!--<a href="services.html" target="_blank">Services</a>-->
+            <!--<a href="phd_assistance.html" target="_blank">PhD Assistance</a>-->
+            <a href="blog.html" target="_blank">Blog</a>
+            <a href="contact.html" target="_blank">Contact</a>
+        </div>
+    
+
+        <div class="right-info contact-info">
+            <!-- Facebook icon with link -->
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <!-- Instagram icon with link -->
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+            <!-- LinkedIn icon with link -->
+            <a href="https://www.linkedin.com/in/csekareem" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+
+
+
+        
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+h1,ul,li{
+    display: inline;
+    padding: 20px;
+}
+ul{
+    margin-left: 50%;
+}
+li:hover{
+    color: red;
+    cursor: pointer;
+}
+.search{
+    padding: 100px;
+    text-align: center;
+}
+input{
+    width: 60%;
+    padding: 17px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+.product.box{
+    width: 100px;
+    height: 100px;
+}
